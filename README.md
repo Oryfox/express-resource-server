@@ -1,6 +1,6 @@
 # Express Resource Server
 
-This package is a resource server built with Express.js. It provides a RESTful API for managing resources.
+This package provides a single method to install a global middleware to enable OAuth authentication on expressjs servers.
 
 ## Installation
 
