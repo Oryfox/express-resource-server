@@ -1,6 +1,6 @@
 {
   "name": "@oryfox/express-resource-server",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Most simple OAuth Resource Server implementation",
   "main": "dist/auth.js",
   "types": "dist/auth.d.ts",
