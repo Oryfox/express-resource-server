@@ -4,11 +4,13 @@ This package is a resource server built with Express.js. It provides a RESTful A
 
 ## Installation
 
-To install the package, run the following command:
+To install the package run
+
 ```npm i @oryfox/express-resource-server```
 
 ## Usage
-Import the package
+### Import the package
 ```import useResourceServer from '@oryfox/express-resource-server';```
-and then install the middleware
+
+### And then install the middleware
 ```app.use(useResourceServer(<jwksUri>));```
