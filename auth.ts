@@ -13,11 +13,17 @@ const getKey: GetPublicKeyOrSecret = (header: JwtHeader, callback: SigningKeyCal
       console.log("You have to init express resource server first");
     }
     jwksClient({
-      jwksUri: uri
+      jwksUri: uri,
+      requestHeaders: {
+        'user-agent': 'express-resource-server'
+      }
     }).getSigningKey(header.kid)
         .then((key: any) => {
             var signingKey = key.publicKey || key.rsaPublicKey;
             callback(null, signingKey);
+        })
+        .catch((err: any) => {
+          callback(null, undefined);
         })
 }
 
