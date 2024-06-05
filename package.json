@@ -1,0 +1,25 @@
+{
+  "name": "@oryfox/express-resource-server",
+  "version": "1.0.0",
+  "description": "Most simple OAuth Resource Server implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Oryfox/express-resource-server.git"
+  },
+  "author": "Oryfox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Oryfox/express-resource-server/issues"
+  },
+  "homepage": "https://github.com/Oryfox/express-resource-server#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.1.0",
+    "typescript": "^5.4.5"
+  }
+}
