@@ -14,3 +14,14 @@ To install the package run
 
 ### And then install the middleware
 ```app.use(useResourceServer(<jwksUri>));```
+
+### Example usage
+```javascript
+app.get('/test', (req: AuthenticatedRequest, res: Response, next: NextFunction) => {
+    if (req.token) {
+        res.send(req.token)
+    } else {
+        res.sendStatus(401)
+    }
+})
+```
