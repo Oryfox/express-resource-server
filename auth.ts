@@ -1,7 +1,10 @@
 import jwksClient from "jwks-rsa";
-import {NextFunction, Response} from "express";
+import {NextFunction, Request, Response} from "express";
 import jwt, {GetPublicKeyOrSecret, Jwt, JwtHeader, JwtPayload, SigningKeyCallback, VerifyErrors} from "jsonwebtoken";
-import {AuthenticatedRequest} from "./AuthenticatedRequest";
+
+export interface AuthenticatedRequest extends Request {
+  token?: Jwt | JwtPayload | string
+}
 
 var uri: string
 
